@@ -1,7 +1,28 @@
-const ListaDeContatos = () => (
-  <main>
-    <h1>Lista Empresarial de Contatos</h1>
-  </main>
-)
+import { useSelector } from "react-redux"
+import Contato from "../../components/Contato"
+import * as S from "./styles"
+import { SourceReducer } from "../../store"
+
+const ListaDeContatos = () => {
+  const {itens} = useSelector((state: SourceReducer) => state.contatos)
+
+  return (
+    <S.Container>
+      <ul>
+        <S.Titulo>Lista Empresarial de Contatos</S.Titulo>
+        {itens.map(c =>
+          <li key={c.id}>
+            <Contato
+            id={c.id}
+            nome={c.nome}
+            email={c.email}
+            telefone={c.telefone}
+            />
+          </li>)
+        }
+      </ul>
+    </S.Container>
+  )
+}
 
 export default ListaDeContatos
