@@ -7,7 +7,7 @@ import store from "./store";
 export type Contato = {
   nome: string
   email: string | number
-  telefone: number
+  telefone: number | string
   id: number
 }
 
