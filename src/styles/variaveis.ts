@@ -1,4 +1,4 @@
 export default {
-  vermelho: "red",
-  verde: "green"
+  vermelho: "#FF0000",
+  verde: "#008000"
 }

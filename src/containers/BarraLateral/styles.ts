@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const Aside = styled.aside`
-  padding: 16px;
+  padding: 24px;
   height: 100vh;
-  background-color: #e5cff9;
+  background-color: #282c34;
 `
 
 export const Titulo = styled.h3`
   margin-bottom: 24px;
+  color: #eee;
 `

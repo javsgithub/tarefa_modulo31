@@ -5,8 +5,12 @@ export const Container = styled.main`
   overflow-y: scroll;
   background-color: lightgreen;
   height: 100vh;
-`
+  border-top: 8px solid #282c34;
+  border-bottom: 8px solid #282c34;
+  `
 export const Titulo = styled.h1`
-  margin: none;
+  margin: 0;
+  margin-bottom: 32px;
   text-align: center;
+  text-transform: uppercase;
 `

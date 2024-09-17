@@ -1,9 +1,8 @@
 import { useDispatch } from "react-redux"
 import { useEffect, useState } from "react"
+
 import { Contato as ContatoType } from "../../App"
-
 import { removerContato, salvarContato } from "../../store/reducers/contatos"
-
 import * as S from "./styles"
 
 const Contato = ({
@@ -41,7 +40,7 @@ const Contato = ({
       </div>
       <div>
         <S.Legenda htmlFor="email">E-mail: </S.Legenda>
-        <S.Campo disabled={!estaEditanto} value={email} onChange={(evento) => setEmail(evento.target.value)} type="e-mail" id="email"/>
+        <S.CampoEmail disabled={!estaEditanto} value={email} onChange={(evento) => setEmail(evento.target.value)} type="e-mail" id="email"/>
       </div>
       <div>
         <S.Legenda htmlFor="phone">Telefone: </S.Legenda>
